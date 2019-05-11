@@ -17,13 +17,13 @@ import { theme } from '../constants';
 
 const screens = createStackNavigator({
   Welcome,
-  // Login,
-  // SignUp,
-  // Forgot,
-  // Explore,
-  // Browse,
-  // Product,
-  // Settings,
+  Login,
+  SignUp,
+  Forgot,
+  Explore,
+  Browse,
+  Product,
+  Settings,
 }, {
   defaultNavigationOptions: {
     headerStyle: {
