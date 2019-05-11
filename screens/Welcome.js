@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import { Animated, Dimensions, Image, FlatList, Modal, StyleSheet, ScrollView } from 'react-native';
 
-import { Button, Block, Text } from '../components';
+import Block from '../components/Block';
+import Button from '../components/Button';
+import Text from '../components/Text';
 import { theme } from '../constants';
 
 const { width, height } = Dimensions.get('window');
 
-class Welcome extends Component {
+export default class Welcome extends Component {
   static navigationOptions = {
     header: null,
   }
@@ -164,8 +166,6 @@ Welcome.defaultProps = {
     { id: 3, source: require('../assets/images/illustration_3.png') },
   ],
 };
-
-export default Welcome;
 
 const styles = StyleSheet.create({
   stepsContainer: {
