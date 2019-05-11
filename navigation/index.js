@@ -1,3 +1,5 @@
+/* eslint-disable global-require */
+
 import React from 'react';
 import { Image } from 'react-native';
 import { createAppContainer, createStackNavigator } from 'react-navigation';
@@ -15,18 +17,18 @@ import { theme } from '../constants';
 
 const screens = createStackNavigator({
   Welcome,
-  Login,
-  SignUp,
-  Forgot,
-  Explore,
-  Browse,
-  Product,
-  Settings,
+  // Login,
+  // SignUp,
+  // Forgot,
+  // Explore,
+  // Browse,
+  // Product,
+  // Settings,
 }, {
   defaultNavigationOptions: {
     headerStyle: {
       height: theme.sizes.base * 4,
-      backgroundColor: theme.colors.white, // or 'white
+      backgroundColor: theme.colors.white,
       borderBottomColor: 'transparent',
       elevation: 0, // for android
     },
